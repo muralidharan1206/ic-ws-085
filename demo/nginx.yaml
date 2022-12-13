@@ -74,7 +74,7 @@ data:
      </style>
      </head>
      <body>
-     <h1>Output from namespace ic-ws-demo-v1!</h1>
+     <h1>Output from namespace ic-ws-085!</h1>
      <p>If you see this page, your application and service are successfully installed and
      working. </p>
      <p><em>Thank you for attending Kubernetes Workshop.</em></p>
@@ -87,8 +87,8 @@ metadata:
   annotations:
     kubernetes.io/ingress.class: haproxy-haproxy
     haproxy.org/path-rewrite: "/"
-  name: nginx-ingress
-  #namespace: ic-ws-demo-v1
+  name: nginx
+  namespace: ic-ws-085
 spec:
   rules:
    - http:
@@ -104,7 +104,7 @@ spec:
 apiVersion: autoscaling/v1
 kind: HorizontalPodAutoscaler
 metadata:
-  name: nginx-cpu-hpa
+  name: nginx
   namespace: ic-ws-085
 spec:
   scaleTargetRef:
