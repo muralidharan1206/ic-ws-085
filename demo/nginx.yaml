@@ -93,7 +93,7 @@ spec:
   rules:
    - http:
       paths:
-      - path: /demo
+      - path: /ic-ws-085
         pathType: Prefix
         backend:
           service:
